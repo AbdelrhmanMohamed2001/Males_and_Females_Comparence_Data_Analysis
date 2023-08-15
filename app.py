@@ -6,7 +6,7 @@ import streamlit as st
 import plotly.express as px
 
 
-df= pd.read_csv("/content/student_data.csv")
+df= pd.read_csv("student_data.csv")
 st.title("COMPARENCE BETWEEN MALE AND FEMALE STUDENTS")
 
 Analysis= st.checkbox("Show Analysis Of Whole Data")

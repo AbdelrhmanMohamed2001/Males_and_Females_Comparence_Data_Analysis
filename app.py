@@ -35,15 +35,7 @@ if Analysis:
         st.write("**For**", column, "**Feature**")
         st.write(df[column].value_counts())
         st.write(df[column].value_counts().sum())
-##################################################################################################################################################################
-# Calculate the correlation matrix
-      corr_matrix = df.corr()
-# Create a heatmap of the correlation matrix
-      fig = px.imshow(corr_matrix)
-# Set the title and labels for the plot
-      fig.update_layout(title="Correlation of Dataset")
-# Show the plot
-      st.plotly_chart(fig)
+
 ##################################################################################################################################################################
       for column in df.columns:
         unique_values = df[column].unique()
